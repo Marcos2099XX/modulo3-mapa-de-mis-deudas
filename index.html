@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -330,32 +330,6 @@
       background: rgba(148,163,184,.14);
       color: var(--muted);
     }
-
-    .padlet-wrapper {
-      margin-top: 10px;
-    }
-
-    .padlet-embed {
-      border:1px dashed rgba(148,163,184,.5);
-      border-radius: var(--radius-sm);
-      box-sizing:border-box;
-      width:100%;
-      min-height:120px;
-      max-width:100%;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-size:0.82rem;
-      color:var(--muted);
-      text-align:center;
-      padding:12px;
-      background: rgba(15,23,42,.6);
-    }
-
-    .padlet-embed i {
-      margin-right: 6px;
-      color: var(--primary);
-    }
   </style>
 </head>
 <body>
@@ -381,7 +355,7 @@
 
       <nav class="steps-indicator" aria-label="Pasos de la actividad">
         <div class="step-pill step-pill--active">1 · Completa tu mapa</div>
-        <div class="step-pill">2 · Reflexiona y (opcional) comparte</div>
+        <div class="step-pill">2 · Reflexiona</div>
       </nav>
 
       <div class="layout">
@@ -430,11 +404,10 @@
           <div class="info-card">
             <i class="fas fa-circle-check" aria-hidden="true"></i>
             <div>
-              <strong>Tu tabla se considera completa si:</strong>
+              <strong>Tip rápido:</strong>
               <ul class="list-compact">
-                <li>Incluyes al menos 3 deudas.</li>
-                <li>Cada una tiene: acreedor, monto, fecha de pago e interés (si aplica).</li>
-                <li>Los datos se ven coherentes (montos, fechas, intereses).</li>
+                <li>Incluye al menos 3 deudas.</li>
+                <li>En cada una anota acreedor, monto, fecha de pago e interés (si aplica).</li>
               </ul>
             </div>
           </div>
@@ -455,7 +428,7 @@
           </p>
         </section>
 
-        <!-- LADO DERECHO: REFLEXIÓN + COLABORACIÓN -->
+        <!-- LADO DERECHO: SOLO REFLEXIÓN -->
         <aside class="card" aria-labelledby="paso2-titulo">
           <h2 id="paso2-titulo">
             <i class="fas fa-pen-to-square"></i>
@@ -478,41 +451,9 @@
             <span class="chip">Consecuencias de no pagar</span>
             <span class="chip">Focos rojos</span>
           </div>
-
-          <div class="info-card">
-            <i class="fas fa-clipboard-check" aria-hidden="true"></i>
-            <div>
-              <strong>¿Qué se evalúa?</strong>
-              <ul class="list-compact">
-                <li>La tabla está completa y ordenada.</li>
-                <li>Los datos son coherentes y realistas.</li>
-                <li>En tu reflexión se ve claramente cuál deuda es prioridad y por qué.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="mini-section-title">Recursos sugeridos:</div>
-          <div class="chips">
-            <span class="chip"><i class="fas fa-table"></i> Plantilla de tabla</span>
-            <span class="chip"><i class="fas fa-calculator"></i> Calculadora del cel</span>
-            <span class="chip"><i class="fas fa-users"></i> Foro (opcional)</span>
-          </div>
-
-          <div class="mini-section-title">Colaboración (opcional)</div>
-          <p style="font-size:0.86rem; color:var(--muted); margin-bottom: 6px;">
-            Puedes compartir una versión ficticia de tu mapa en un foro y comentar los focos rojos que ves en los mapas de tus compañeros (sin datos personales).
-          </p>
-
-          <div class="padlet-wrapper" aria-label="Foro o espacio de reflexión">
-            <div class="padlet-embed">
-              <i class="fas fa-comments"></i>
-              Aquí puedes incrustar un Padlet o foro para subir solo la versión ficticia del mapa de deudas y comentar focos rojos.
-            </div>
-          </div>
         </aside>
       </div>
     </main>
   </div>
 </body>
 </html>
-```
